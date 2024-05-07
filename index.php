@@ -10,23 +10,23 @@ $movies = [
 
 ?>
 <main class="container">
-   <section>
-    <h2>Movies</h2>
-    <div class="row">
-        <?php foreach ($movies as $movie) : ?>
+<section>
+         <h2>Movies</h2>
+        <div class="row">
+        <?php foreach ($movies as $movie) { ?>
             <div class="col-12 col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem;">
-                <img src="<?php $movie->cover; ?>" class="card-img-top" alt="<?php $movie->title; ?>">
+            <div class="card">
+                <img src="<?php $movie->cover ?>" class="card-img-top" alt="<?php $movie->title ?>">
                 <div class="card-body">
-                    <h5 class="card-title"><?php $movie->title; ?></h5>
-                    <p class="card-text"><?php $movie->language; ?></p>
-                    <span><?php $movie->rating; ?></span>
-                    
-  </div>
-</div>
+                    <h5 class="card-title"><?php $movie->title ?></h5>
+                    <p class="card-text"><?php $movie->language ?></p>
+                    <span><?php $movie->rating ?></span>
+                </div>
             </div>
-    </div>
+            </div>
+            <?php } ?>
+         </div>
    </section>
    
 </main>
-<?php include __DIR__ .'/Views/footer.php'?>
+<?php include __DIR__ .'/Views/footer.php';?>

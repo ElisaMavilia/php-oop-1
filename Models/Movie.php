@@ -12,6 +12,7 @@ class Movie extends Product
    }
 
    public function showMovies(){
-    echo $this->language;
+   
+   
     }
 }
