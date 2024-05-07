@@ -1,5 +1,5 @@
 <?php
-/* include __DIR__ . "/movies.json"; */
+
 class Product {
     public string $title;
     public int $cover;
@@ -13,6 +13,6 @@ class Product {
     }
 
     public function showMovies(){
-       echo 'show movies';
+       
     }
 }

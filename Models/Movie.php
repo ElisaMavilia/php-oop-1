@@ -12,9 +12,6 @@ class Movie extends Product
    }
 
    public function showMovies(){
-    echo $this->title;
-    echo $this->cover;
     echo $this->language;
-    echo $this->rating;     
     }
 }
