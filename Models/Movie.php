@@ -11,8 +11,8 @@ class Movie extends Product
       parent::__construct($title, $cover, $rating);
    }
 
-   public function showMovies(){
-   
-   
-    }
+   public function showMovies()
+   {
+    echo 'Show movies';
+   }
 }

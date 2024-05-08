@@ -12,7 +12,4 @@ class Product {
         $this->rating = $rating;
     }
 
-    public function showMovies(){
-       
-    }
 }
